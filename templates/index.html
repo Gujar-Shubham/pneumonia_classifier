@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="form-group-lg">
+                {% if form %}
+                    <div class="row">
+                        <h2>Image Classification with Keras</h2>
+                        <p>
+                            This is a demo for image classification using Tensorflow Keras.
+                            The model I use is <span>
+                                <a href="https://keras.io/api/applications/mobilenet/#mobilenetv2-function" target="_blank">MobileNetV2</a>
+                            </span> since it is the smallest model in terms of number of parameters and size. Given an input
+                            image, the model classifies it into one of the thousand categories in
+                            <span><a href="http://image-net.org/about-overview" target="_blank">ImageNet</a></span>.
+                            The code is available in <span><a href="https://github.com/Gujar-Shubham/">this</a> </span> Github repo.
+                        </p>
+                    </div>
+                    {{ wtf.quick_form(form) }}
+                {% endif %}
+     </div>
+
+    {% if file_url %}
+    <div class="row">
+        <h2>Classification Result</h2>
+        <p>
+            The uploaded image and the classification results are shown below.
+        </p>
+
+        <div class="col-md-4">
+                <img src="{{file_url}}" class="img-fluid img-thumbnail">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2> Predictions </h2>
+            <ul>
+                <li>{{prediction}} was Predicted</li>
+            </ul>
+        </div>
+    </div>
+    <a class="btn btn-primary" href="{{ url_for('home') }}" role="button">Go Back</a>
+    {% endif %}
+{% endblock %}
