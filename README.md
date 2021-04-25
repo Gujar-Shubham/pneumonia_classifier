@@ -7,6 +7,6 @@ into one of the thousand categories in ImageNet. The model is deployed in
 [this](https://pneumonia-classifier-cnn.herokuapp.com/) link.
 
 EXAMPLE:
-![alt text](https://github.com/Gujar-Shubham/pneumonia_classifier/tree/main/ss/Screenshot%20(120).png?raw=true)
+![alt text](https://github.com/Gujar-Shubham/pneumonia_classifier/blob/main/ss/Screenshot%20(120).png?raw=true)
 ![alt text](https://github.com/Gujar-Shubham/pneumonia_classifier/tree/main/ss/Screenshot%20(121).png?raw=true)
 ![alt text](https://github.com/Gujar-Shubham/pneumonia_classifier/tree/main/ss/Screenshot%20(122).png?raw=true)
