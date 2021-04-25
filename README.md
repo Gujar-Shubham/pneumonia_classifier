@@ -6,6 +6,8 @@ terms of number of parameters and size. Given an input image, the model classifi
 into one of the thousand categories in ImageNet. The model is deployed in 
 [this](https://pneumonia-classifier-cnn.herokuapp.com/) link.
 
+https://pneumonia-classifier-cnn.herokuapp.com/
+
 EXAMPLE:
 ![alt text](https://github.com/Gujar-Shubham/pneumonia_classifier/blob/main/ss/Screenshot%20(120).png?raw=true)
 ![alt text](https://github.com/Gujar-Shubham/pneumonia_classifier/blob/main/ss/Screenshot%20(121).png?raw=true)
